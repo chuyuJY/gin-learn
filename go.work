@@ -1,0 +1,8 @@
+go 1.18
+
+use (
+	./gin-todolist/api-gateway
+	./gin-todolist/user
+	./gin-todolist/task
+	./etcd-basic
+)

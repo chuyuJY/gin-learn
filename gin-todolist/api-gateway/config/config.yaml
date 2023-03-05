@@ -1,0 +1,15 @@
+server:
+  port: :4000
+  version: 1.0
+  jwtSecret: chuyu
+
+redis:
+  address: 127.0.0.1:16379
+  password:
+
+etcd:
+  address: [127.0.0.1:12379, 127.0.0.1:22379, 127.0.0.1:32379]
+
+domain:
+  user: user
+  task: task

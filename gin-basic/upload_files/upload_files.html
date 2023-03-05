@@ -1,0 +1,22 @@
+{{define "upload_files.html"}}
+<!DOCTYPE html>
+<html lang="zn-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>上传文件</title>
+</head>
+<body>
+<form action="/uploadSingle" method="post" enctype="multipart/form-data">
+  上传单个文件：
+  <input type="file" name="file">
+  <input type="submit" value="上传">
+</form>
+
+<form action="/uploadMulti" method="post" enctype="multipart/form-data">
+  上传多个文件：
+  <input type="file" name="files[]" multiple>
+  <input type="submit" value="上传">
+</form>
+</body>
+</html>
+{{end}}
